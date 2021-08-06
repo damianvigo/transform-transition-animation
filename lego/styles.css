@@ -111,6 +111,114 @@ body {
   }
 }
 
+.side-content {
+  grid-area: aside;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+}
+
+.side-content p {
+  transform: rotate(-90deg);
+  font-size: 36px;
+
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+
+  animation-name: side-content-text;
+  animation-duration: 0.5s;
+  animation-delay: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes side-content-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.side-content img {
+  width: 100%;
+  grid-column: 2 / 6;
+  grid-row: 1 / 2;
+
+  animation: 2s side-content-img 0.5s ease-in-out;
+}
+
+.side-content div {
+  background-color: var(--main-color);
+  height: 100vh;
+  grid-column: 4 / 7;
+  grid-row: 1 / 2;
+}
+
+@keyframes side-content-img {
+  0% {
+    transform: translateY(900px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  background-color: var(--main-color);
+  border-radius: 0 80px 0 0;
+  transform: translateY(100%);
+
+  animation-name: footer;
+  animation-duration: 0.5s;
+  animation-delay: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.footer div {
+  background-color: var(--secondary-color);
+  width: 130px;
+  height: 50%;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* ux-time-smooth */
+.footer div img {
+  width: 160px;
+  position: absolute;
+  bottom: 30px;
+  /* ux-time-smooth */
+  transform: translateY(0px) scale(1);
+  transition: transform 0.5s ease-in-out; /* ux-time-smooth */
+}
+/* ux-time-smooth */
+.footer div:hover img {
+  cursor: pointer;
+  /* ux-time-smooth*/
+  transform: translateY(-20px) scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+@keyframes footer {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .loader {
   background-color: rgb(143, 62, 62);
   width: 100%;
