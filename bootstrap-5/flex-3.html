@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bt5</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <style>
+      .contenedor {
+        margin-bottom: 20px;
+        background-color: #0d6efd;
+        color: #fff;
+        min-height: 100px;
+      }
+
+      .contenedor > div {
+        padding: 15px 20px;
+        border: 1px solid #0d6efd;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row py-5">
+        <div class="col">
+          <h4>Wrap</h4>
+          <hr />
+
+          <p>.flex-nowrap</p>
+          <div class="contenedor d-flex flex-nowrap">
+            <div>Box 1</div>
+            <div>Box 2</div>
+            <div>Box 3</div>
+            <div>Box 4</div>
+            <div>Box 5</div>
+            <div>Box 6</div>
+            <div>Box 7</div>
+            <div>Box 8</div>
+            <div>Box 9</div>
+            <div>Box 10</div>
+            <div>Box 11</div>
+            <div>Box 12</div>
+            <div>Box 13</div>
+            <div>Box 14</div>
+            <div>Box 15</div>
+          </div>
+
+          <p>.flex-wrap</p>
+          <div class="contenedor d-flex flex-wrap">
+            <div>Box 1</div>
+            <div>Box 2</div>
+            <div>Box 3</div>
+            <div>Box 4</div>
+            <div>Box 5</div>
+            <div>Box 6</div>
+            <div>Box 7</div>
+            <div>Box 8</div>
+            <div>Box 9</div>
+            <div>Box 10</div>
+            <div>Box 11</div>
+            <div>Box 12</div>
+            <div>Box 13</div>
+            <div>Box 14</div>
+            <div>Box 15</div>
+          </div>
+
+          <p>.flex-wrap-reverse</p>
+          <div class="contenedor d-flex flex-wrap-reverse">
+            <div>Box 1</div>
+            <div>Box 2</div>
+            <div>Box 3</div>
+            <div>Box 4</div>
+            <div>Box 5</div>
+            <div>Box 6</div>
+            <div>Box 7</div>
+            <div>Box 8</div>
+            <div>Box 9</div>
+            <div>Box 10</div>
+            <div>Box 11</div>
+            <div>Box 12</div>
+            <div>Box 13</div>
+            <div>Box 14</div>
+            <div>Box 15</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row my-5">
+        <div class="col">
+          <h4>Order</h4>
+          <hr />
+
+          <div class="contenedor d-flex flex-nowrap">
+            <div class="order-3">Box 1</div>
+            <div class="order-0">Box 2</div>
+            <div class="order-4">Box 3</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row my-5">
+        <div class="col">
+          <h4>Align Content</h4>
+          <hr />
+
+          <p>.align-content-start</p>
+          <div
+            class="contenedor d-flex flex-wrap align-content-start"
+            style="height: 200px"
+          >
+            <div>Box 1</div>
+            <div>Box 2</div>
+            <div>Box 3</div>
+            <div>Box 4</div>
+            <div>Box 5</div>
+            <div>Box 6</div>
+            <div>Box 7</div>
+            <div>Box 8</div>
+            <div>Box 9</div>
+            <div>Box 10</div>
+            <div>Box 11</div>
+            <div>Box 12</div>
+            <div>Box 13</div>
+            <div>Box 14</div>
+            <div>Box 15</div>
+          </div>
+
+          <p>.align-content-center</p>
+          <div
+            class="contenedor d-flex flex-wrap align-content-center"
+            style="height: 200px"
+          >
+            <div>Box 1</div>
+            <div>Box 2</div>
+            <div>Box 3</div>
+            <div>Box 4</div>
+            <div>Box 5</div>
+            <div>Box 6</div>
+            <div>Box 7</div>
+            <div>Box 8</div>
+            <div>Box 9</div>
+            <div>Box 10</div>
+            <div>Box 11</div>
+            <div>Box 12</div>
+            <div>Box 13</div>
+            <div>Box 14</div>
+            <div>Box 15</div>
+          </div>
+
+          <p>.align-content-end</p>
+          <div
+            class="contenedor d-flex flex-wrap align-content-end"
+            style="height: 200px"
+          >
+            <div>Box 1</div>
+            <div>Box 2</div>
+            <div>Box 3</div>
+            <div>Box 4</div>
+            <div>Box 5</div>
+            <div>Box 6</div>
+            <div>Box 7</div>
+            <div>Box 8</div>
+            <div>Box 9</div>
+            <div>Box 10</div>
+            <div>Box 11</div>
+            <div>Box 12</div>
+            <div>Box 13</div>
+            <div>Box 14</div>
+            <div>Box 15</div>
+          </div>
+
+          <p>.align-content-between</p>
+          <div
+            class="contenedor d-flex flex-wrap align-content-between"
+            style="height: 200px"
+          >
+            <div>Box 1</div>
+            <div>Box 2</div>
+            <div>Box 3</div>
+            <div>Box 4</div>
+            <div>Box 5</div>
+            <div>Box 6</div>
+            <div>Box 7</div>
+            <div>Box 8</div>
+            <div>Box 9</div>
+            <div>Box 10</div>
+            <div>Box 11</div>
+            <div>Box 12</div>
+            <div>Box 13</div>
+            <div>Box 14</div>
+            <div>Box 15</div>
+          </div>
+
+          <p>.align-content-around</p>
+          <div
+            class="contenedor d-flex flex-wrap align-content-around"
+            style="height: 200px"
+          >
+            <div>Box 1</div>
+            <div>Box 2</div>
+            <div>Box 3</div>
+            <div>Box 4</div>
+            <div>Box 5</div>
+            <div>Box 6</div>
+            <div>Box 7</div>
+            <div>Box 8</div>
+            <div>Box 9</div>
+            <div>Box 10</div>
+            <div>Box 11</div>
+            <div>Box 12</div>
+            <div>Box 13</div>
+            <div>Box 14</div>
+            <div>Box 15</div>
+          </div>
+
+          <p>.align-content-stretch</p>
+          <div
+            class="contenedor d-flex flex-wrap align-content-stretch"
+            style="height: 200px"
+          >
+            <div>Box 1</div>
+            <div>Box 2</div>
+            <div>Box 3</div>
+            <div>Box 4</div>
+            <div>Box 5</div>
+            <div>Box 6</div>
+            <div>Box 7</div>
+            <div>Box 8</div>
+            <div>Box 9</div>
+            <div>Box 10</div>
+            <div>Box 11</div>
+            <div>Box 12</div>
+            <div>Box 13</div>
+            <div>Box 14</div>
+            <div>Box 15</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"
+  ></script>
+</html>
